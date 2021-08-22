@@ -1,0 +1,60 @@
+@font-face{
+    font-family: GreatVibes-Regular;
+    src:url(GreatVibes-Regular.ttf)
+    }
+
+.heading{
+    font-family: GreatVibes-Regular;
+    margin-top: 10vh;
+    font-size: 5rem;
+    color:black ;
+    font-weight: 600;
+    text-shadow: 10px 10px 10px #00000054;
+}
+.heading span{
+    color: #ffb19e;
+}
+.underline{
+    height: 3px;
+    width: 25vh;
+    background-color: #FFC39E;
+    margin-top: 10px;
+    box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+    -moz-box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+     
+}
+
+
+@media only screen and (max-width: 600px) {
+    .heading{
+        font-size: 40px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .heading{
+    font-size: 60px;
+}}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)  {
+    .heading{
+        font-size: 70px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .heading{
+        font-size: 80px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .heading{
+        font-size: 85px;
+    }
+}

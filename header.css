@@ -1,0 +1,316 @@
+/* #header {
+     background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)),
+    url("Untitled\ design.png"); 
+    background: rgb(254,177,192);
+    background: linear-gradient(0deg, rgba(254,177,192,1) 0%, rgba(255,56,136,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 90vh;
+    margin: 3px auto 0;
+    position: relative;
+    
+}
+
+#headerpic{
+  
+    background-color: #00264d;
+    height: 70vh;
+    width: 50%;
+   
+}
+#pic{
+    position: relative;
+    margin-top: 20vh;
+    margin-left: 30%;
+}
+#pic img{
+    height: 200px;
+    width: 200px;
+} */
+
+@font-face{
+  font-family: Bill Smith;
+  src:url(Bill\ Smith\ Demo.ttf)
+  }
+  @font-face{
+    font-family: Listian Type;
+    src:url(Listan\ Type.ttf)
+    }
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.header{
+    /* background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(240,0,114,1) 50%, rgba(240,0,114,1) 100%); */
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgb(32, 116, 241) 4%, rgb(32, 116, 241)  100%);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    height: 90vh;
+   
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  
+}
+.child {
+    /* background-color: #132639; */
+  
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    height: 70vh;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30vh;
+    /* background-color: #fa0750; */
+
+  }
+  .pic{
+   
+    /* flex: 50%; */
+
+
+    /* position: absolute;
+    top: 50%;
+    margin-left: 20%;
+    transform: translate(0, -50%); */
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+    /* margin-left: -10vh; */
+    
+    
+    
+  }
+  .pic img{
+      height: auto;
+      width: 390px;
+      border-style: solid;
+      border-width: 2vh;
+      border-color: rgb(32, 116, 241);
+      background-color: white;
+      box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+-webkit-box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+-moz-box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+     
+     
+    
+  }
+  .js{
+   
+    /* flex: 50%; */
+
+    height: 60vh;
+    width: 80vh;
+    margin-top: 7vh;
+    background-color: white;
+    justify-content: center;
+    align-items: center; display: flex;
+    position:relative;
+   border-radius: 95px 0 95px 0;
+   box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+-webkit-box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+-moz-box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+
+   
+  }
+  .head {
+    font-family: Bill Smith;
+    font-size: 2rem;
+    line-height: 82px;
+  }
+  .head  span{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .logo{
+    display: flex;
+    position: absolute;
+    margin-top: 30vh;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+  .container{
+    margin-top: -10vh;
+  }
+  .container p {
+    
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container p span.typed-text {
+    font-family: Listian Type;
+    color: #fa0750;
+    font-size: 2.4rem;
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #fa0750;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+
+  
+  @media only screen and (max-width: 600px) {
+    .pic img{
+      width: 65%;
+      height: 70%;
+      float: left;
+    
+    }
+    
+    .child{
+      margin-top: 2vh;
+      gap: 0vh;
+    }
+    .js{
+        padding-top: 15px;
+        height: 26vh;
+        border-radius: 0 0 0 0;
+      }
+      .container p{
+        font-size: 20px;
+      }
+      .container p span.typed-text{
+      font-size: 30px;
+      margin-top: -19vh;
+     
+    }
+    .header{
+      width: 100%;
+      height: auto;
+      margin-bottom: 3vh;
+    }
+    .logo{
+      gap: 20px;
+      margin-top: 10vh;
+      /* background-color: #fa0750; */
+     
+    }
+    
+    .head{
+      line-height: 52px;
+    }
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) and  (max-device-width: 767px) {
+    .pic img{
+      width: 70%;
+      height: 70%;
+      float: left;
+    
+    }
+    
+    .child{
+      margin-top: 2vh;
+      gap: 0vh;
+    }
+    .js{
+        padding-top: 15px;
+        height: 26vh;
+        
+      }
+      .container p{
+        font-size: 20px;
+      }
+      .container p span.typed-text{
+      font-size: 30px;
+      margin-top: -19vh;
+     
+    }
+    .header{
+      width: 100%;
+      height: auto;
+      margin-bottom: 19vh;
+    }
+    .logo{
+      gap: 20px;
+      margin-top: 10vh;
+      /* background-color: #fa0750; */
+     
+    }
+    
+    .head{
+      line-height: 52px;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and  (max-device-width: 991px) {
+    .pic img{
+      width: 65%;
+      height: 70%;
+      float: left;
+      margin-left: -20vh;
+    
+    }
+    
+    .child{
+      margin-top: 2vh;
+      gap: 0vh;
+    }
+    .js{
+        padding-top: 15px;
+        height: 26vh;
+       
+      }
+      .container p{
+        font-size: 20px;
+      }
+      .container p span.typed-text{
+      font-size: 30px;
+      margin-top: -19vh;
+     
+    }
+    .header{
+      width: 100%;
+      height: auto;
+      margin-bottom: 3vh;
+    }
+    .logo{
+      gap: 20px;
+      margin-top: 10vh;
+      /* background-color: #fa0750; */
+     
+    }
+    
+    .head{
+      line-height: 52px;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+      
+  }

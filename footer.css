@@ -1,0 +1,53 @@
+.footer{
+    height: 27vh;
+    width: 100%;
+    background-color: rgb(32, 116, 241);
+    margin-top: 7vh;
+    color: azure;
+   
+   
+   
+}
+@font-face{
+    font-family: Bill Smith;
+    src:url(Bill\ Smith\ Demo.ttf)
+    }
+@font-face{
+    font-family: GreatVibes-Regular;
+    src:url(GreatVibes-Regular.ttf)
+    }
+.footer p{
+   
+    color: white;
+    font-size: 2.5rem;
+    font-family: GreatVibes-Regular;
+    text-shadow: 10px 10px 10px #000000c0;
+    
+}
+.button {
+    
+    
+    /* border-style: solid;
+    border-width: 3px; */
+    /* border-color: rgb(32, 116, 241); */
+    background-color: white;
+    color: rgb(32, 116, 241);
+    padding: 15px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+  
+    cursor: pointer;
+    
+    box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+-webkit-box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+-moz-box-shadow: 24px 22px 22px 0px rgba(0,0,0,0.71);
+    
+  }
+  .footer img{
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+  }
